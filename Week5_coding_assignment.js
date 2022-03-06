@@ -46,7 +46,7 @@ class Menu{     // this class drives the app
                     this.deleteParty();
                     break;
                 case '4':
-                    this.displayParty();
+                    this.displayParties();
                     break;
                 default:
                     selection = 0;
@@ -77,7 +77,7 @@ class Menu{     // this class drives the app
     }
 
     displayParties(){
-        let partyString = '';
+        let partyString = ' ';
         for (let i = 0; i < this.parties.length; i++){
             partyString += i + ') ' + this.parties[i].name + '\n';
         }
